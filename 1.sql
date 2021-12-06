@@ -15,3 +15,11 @@ VALUES ('Cardinal','eee', 'skagen', 'stavenger', '4006', 'Norway')
 SELECT CustomerName, ContactName, Address
 FROM Customers
 WHERE Address IS NOT NULL
+
+UPDATE Customers SET ContactName="alfred schmidt", City="Frnkfurt"
+WHERE CustomerID = 2;
+
+UPDATE Customers SET City = "Delhi", Country="INDIA"
+WHERE ContactName="Victoria Ashworth"
+SELECT DISTINCT Country FROM Customers
+SELECT Country, City FROM Customers
