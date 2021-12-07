@@ -23,3 +23,8 @@ UPDATE Customers SET City = "Delhi", Country="INDIA"
 WHERE ContactName="Victoria Ashworth"
 SELECT DISTINCT Country FROM Customers
 SELECT Country, City FROM Customers
+
+DELETE FROM Customers WHERE CustomerID="1"
+
+SELECT TOP 4 *
+from Customers;
