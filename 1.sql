@@ -34,3 +34,8 @@ WHERE CustomerName LIKE '%or%'
 
 SELECT * FROM Customers
 WHERE CustomerName LIKE '%a'
+
+SELECT * FROM Customers
+WHERE City LIKE '%er%'
+
+SELECT * FROM Customers WHERE City LIKE '_ondon'
