@@ -28,3 +28,9 @@ DELETE FROM Customers WHERE CustomerID="1"
 
 SELECT TOP 4 *
 from Customers;
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE '%or%'
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE '%a'
