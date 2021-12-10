@@ -15,3 +15,11 @@ WHERE City LIKE '_a%';
 
 SELECT * FROM Customers WHERE City IN ('LONDON')
 SELECT * FROM Customers WHERE City NOT IN ('LONDON')
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20
+AND CategoryID NOT IN (1, 2, 3)
+
+SELECT * FROM Products
+WHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+ORDER BY ProductName;
