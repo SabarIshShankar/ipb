@@ -23,3 +23,7 @@ AND CategoryID NOT IN (1, 2, 3)
 SELECT * FROM Products
 WHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
 ORDER BY ProductName;
+
+SELECT CustomerID AS ID, CustomerName AS Customer FROM Customers;
+
+SELECT CustomerName, Address + ',' + PostalCode AS Address from Customers;
