@@ -30,3 +30,20 @@ SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
 FROM ((Orders 
 INNER JOIN Customers ON Customers.CustomerID = Orders.CustomerID)
 INNER JOIN Shippers ON Shippers.ShipperID = Orders.ShipperID)
+
+
+--left join
+SELECT Customers.CustomerName, Orders.OrderID, Orders.OrderDate
+FROM Customers
+LEFT JOIN Orders on Customers.CustomerID = Orders.CustomerID
+ORDER BY Customers.CustomerName
+
+SELECT Orders.CustomerID, Orders.EmployeeID, Employees.BirthDate
+FROM ORDERS
+RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City 
+ORDER BY A.City;
