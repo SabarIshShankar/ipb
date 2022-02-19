@@ -47,3 +47,7 @@ FROM Customers A, Customers B
 WHERE A.CustomerID <> B.CustomerID
 AND A.City = B.City 
 ORDER BY A.City;
+
+SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country
+
+
